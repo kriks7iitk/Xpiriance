@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homepage">
+    tools:context=".homepage"
+    android:orientation="vertical"
+    style="@style/AppTheme.NoActionBar"
+    android:background="@color/bgapp">
 
-    <android.support.design.widget.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="45dp"
+        android:theme="@style/AppTheme"
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorSolid"
             >
 
-        <TextView
-            android:layout_marginLeft="16dp"
-            android:layout_weight="4"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="Xpiriance"
-            android:textSize="24dp"
-            android:textColor="#000"
-            android:padding="6dp"/>
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Xpiriance"
+                android:textSize="24dp"
+                android:textColor="#000"
+                android:padding="6dp"/>
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="30dp"
@@ -40,24 +44,189 @@
 
         </LinearLayout>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape">
+        <TextView
+            android:layout_marginLeft="16dp"
+            style="@style/tab_home"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            />
+        <TextView
+            android:layout_marginLeft="36dp"
+            style="@style/tab_home"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Questtion"
+            />
+        <TextView
+            style="@style/tab_home"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape2_netbar"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/xpir_shape"
+            android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="here U wil loda lehson"/>
 
-    </android.support.design.widget.AppBarLayout>
 
 
-    <include layout="@layout/content_homepage" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        >
+        <TextView
+            style="@style/asktab"
+            android:textSize="14dp"
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask Questio?"
+            />
+        <TextView
+            style="@style/asktab"
 
-</android.support.design.widget.CoordinatorLayout>
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Experien"
+            />
+        <TextView
+
+            style="@style/asktab"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Activity"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shapescrollable">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/profiles"
+                        android:layout_marginRight="16dp"/>
+                    <TextView
+                        android:layout_weight="8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/post"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+                    <ImageView
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/profiles" />
+                    <TextView
+                        style="@style/comment"
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+                    <ImageView
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/profiles" />
+                    <TextView
+                        style="@style/comment"
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp">
+                    <ImageView
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/profiles" />
+                    <TextView
+                        style="@style/comment"
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comment"/>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

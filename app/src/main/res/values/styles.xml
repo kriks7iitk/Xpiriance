@@ -8,17 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+
     <style name="appbar" parent="Theme.AppCompat">
 
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:colorPrimary">@color/colorSolid</item>
-        <item name="android:colorPrimaryDark">@color/colordark</item>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimaryDark">@color/colordark</item>
+
     </style>
     <style name="tabhome" parent="Theme.AppCompat">
         <item name="android:background">@drawable/shape</item>
@@ -27,7 +24,7 @@
         <item name="android:gravity">center</item>
         <item name="android:textColor">#FFFF</item>
         <item name="android:textSize">18dp</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">4dp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -40,12 +37,19 @@
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginBottom">16dp</item>
     </style>
-<style name="post" parent="Theme.AppCompat">
-    <item name="android:textSize">16dp</item>
+<style name="post" >
+    <item name="android:textSize">24dp</item>
     <item name="android:textStyle">italic</item>
     <item name="android:layout_margin">8dp</item>
-    <item name="android:padding">8dp</item>
+    <item name="android:padding">16dp</item>
 </style>
+    <style name="comment" >
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
