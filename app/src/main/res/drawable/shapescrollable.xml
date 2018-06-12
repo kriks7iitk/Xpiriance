@@ -6,11 +6,6 @@
         android:topRightRadius="30dp"/>
 <solid
     android:color="@color/bgapp"/>
-    <stroke
-        android:color="@color/colorSolid"
-        android:width="2dp"/>
-    <padding
-        android:top="15dp"
-        android:left="16dp"
-        android:right="16dp"/>
+
+
 </shape>
