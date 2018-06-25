@@ -1,29 +1,27 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
     </style>
 
-
     <style name="appbar" parent="Theme.AppCompat">
-
     </style>
 
     <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="colorPrimaryDark">@color/colordark</item>
-
+   <!-- <item name="colorPrimaryDark">@color/colordark</item>  -->
     </style>
+
     <style name="tabhome" parent="Theme.AppCompat">
         <item name="android:background">@drawable/shape</item>
     </style>
+
     <style name= "tab_home" parent="Theme.AppCompat">
         <item name="android:gravity">center</item>
-        <item name="android:textColor">#FFFF</item>
+        <item name="android:textColor">#000</item>
         <item name="android:textSize">18dp</item>
         <item name="android:padding">4dp</item>
         <item name="android:textStyle">bold</item>
@@ -33,15 +31,15 @@
         <item name="android:textColor">#ACAFAE</item>
         <item name="android:background">#FFF</item>
         <item name="android:gravity">center</item>
-       <item name="android:textSize">14dp</item>
-       <item name="android:padding">4dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">4dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginLeft">2dp</item>
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginTop">1dp</item>
-
     </style>
+
     <style name= "ask1" parent="Theme.AppCompat">
         <item name="android:textColor">#ACAFAE</item>
         <item name="android:background">@drawable/asktab</item>
@@ -53,8 +51,8 @@
         <item name="android:layout_marginLeft">2dp</item>
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginTop">1dp</item>
-
     </style>
+
     <style name= "share" parent="Theme.AppCompat">
         <item name="android:textColor">#ACAFAE</item>
         <item name="android:background">@drawable/share</item>
@@ -67,52 +65,47 @@
         <item name="android:layout_marginLeft">2dp</item>
         <item name="android:layout_marginBottom">4dp</item>
         <item name="android:layout_marginTop">1dp</item>
-
     </style>
-<style name="post" >
-    <item name="android:textSize">24dp</item>
-    <item name="android:textStyle">italic</item>
-    <item name="android:layout_margin">8dp</item>
-    <item name="android:padding">16dp</item>
-</style>
-    <style name="comment" >
 
+    <style name="post" >
+       <item name="android:textSize">24dp</item>
+       <item name="android:textStyle">italic</item>
+       <item name="android:layout_margin">8dp</item>
+       <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="comment" >
         <item name="android:textSize">16dp</item>
-           <item name="android:textColor">#37474f</item>
+        <item name="android:textColor">#37474f</item>
         <item name="android:layout_margin">4dp</item>
         <item name="android:fontFamily">@font/comment2</item>
-
     </style>
+
     <style name="profilename">
         <item name="android:textColor">#000</item>
         <item name="android:textSize">15dp</item>
-
-
         <item name="android:layout_marginLeft">4dp</item>
     </style>
+
     <style name="commentprofile">
         <item name="android:textColor">#263238 </item>
         <item name="android:textSize">14dp</item>
         <item name="android:textStyle">bold</item>
-
-
-
     </style>
+
     <style name="ststus">
         <item name="android:textSize">11dp</item>
         <item name="android:textColor">#DDA33F  </item>
     </style>
+
     <style name="menu">
         <item name="android:textSize">22dp</item>
         <item name="android:layout_marginBottom">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
-
         <item name="android:textColor">@android:color/darker_gray</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:fontFamily">@font/neuton2</item>
     </style>
-
-
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

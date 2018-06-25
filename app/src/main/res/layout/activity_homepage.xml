@@ -9,83 +9,62 @@
     style="@style/AppTheme.NoActionBar"
     android:background="@color/bgapp">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@color/colorSolid">
-
-            <TextView
-                android:gravity="center_vertical"
-                android:layout_marginLeft="16dp"
-                android:layout_weight="4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Xpiriance"
-                android:textSize="35dp"
-                android:textColor="#FFF"
-
-
-                android:fontFamily="@font/another"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/search"
-                android:layout_gravity="center"
-                android:layout_weight="1"/>
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:layout_margin="2dp"
-                android:layout_width="25dp"
-                android:layout_height="30dp"
-                android:src="@drawable/menuicon"/>
-
-
-
-
-
-    </LinearLayout>
-
-
-
     <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="10dp">
-        <LinearLayout
-
-   android:paddingTop="8dp"
-            android:elevation="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorSolid">
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Xpiriance"
+            android:textColor="#FFF"
+            android:textSize="30dp"
+            app:fontFamily="@font/ubuntu"
+            android:layout_marginTop="8dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="20dp"
+            android:layout_height="38dp"
+            android:src="@drawable/menuiconn"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:elevation="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical"
             android:background="@drawable/shape"
-
-            >
+            android:layout_width="wrap_content">
             <ImageView
                 android:elevation="8dp"
                 android:layout_gravity="center"
-
                 android:src="@drawable/ic_action_home"
-
-
-
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-
-
-
-
-            />
+                android:layout_width="35dp"
+                android:layout_height="45dp" />
             <View
-
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="wrap_content"
                 android:background="@color/colorSolid" />
-        </LinearLayout>
+         </LinearLayout>
         <LinearLayout
             android:paddingTop="8dp"
             android:paddingBottom="2dp"
@@ -94,20 +73,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:background="@drawable/shape"
-           >
+            android:background="@drawable/shape">
             <ImageView
                 android:elevation="4dp"
-
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_height="match_parent"
-                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_width="30dp"
                 android:paddingBottom="4dp"
-
                 android:src ="@drawable/ic_action_help"/>
-
-
         </LinearLayout>
         <LinearLayout
             android:paddingTop="4dp"
@@ -121,10 +95,9 @@
             android:paddingTop="4dp"
             android:paddingBottom="4dp"
             android:layout_gravity="center"
-
             android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
             android:src="@drawable/ic_action_notification"/>
         </LinearLayout>
         <LinearLayout
@@ -139,505 +112,15 @@
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
                 android:layout_gravity="center"
-
                 android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/ic_action_message"/>
         </LinearLayout>
-
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="@drawable/shape2_netbar"
+    <include layout="@layout/createpost"></include>
 
-        android:orientation="vertical">
-        <TextView
-
-            android:gravity="center_vertical"
-          android:textSize="16dp"
-          android:textStyle="bold"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/xpir_shape"
-            android:paddingLeft="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-            android:textColor="#D6D9D9"
-            android:text="Write Your Story Here !!!"/>
-
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <LinearLayout
-            android:layout_marginRight="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="2dp"
-
-            android:background="@drawable/asktab">
-<ImageView
-
-    android:layout_width="match_parent"
-    android:layout_gravity="center"
-    android:layout_height="24dp"
-    android:src="@drawable/ic_action_ask"
-    />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
-            android:paddingTop="2dp"
-            android:background="#FFF">
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_action_exp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="2dp"
-            android:layout_marginLeft="2dp"
-            android:layout_marginRight="2dp"
-
-            android:background="@drawable/share">
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:layout_height="26dp"
-                android:src="@drawable/ic_action_act"
-                />
-
-
-    </LinearLayout>
-    </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/shapescrollable">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:background="@drawable/shape_comment"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-            <LinearLayout
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="6dp"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                    <ImageView
-
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:src="@drawable/profiles"
-                        android:layout_gravity="center"
-                       />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-
-                        <TextView
-android:paddingTop="3dp"
-                            style="@style/profilename"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jack Sparrow"/>
-                        <LinearLayout
-                            android:layout_marginLeft="4dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-                            <ImageView
-                                android:layout_width="14dp"
-                                android:layout_height="14dp"
-                                android:src="@drawable/ic_action_abut"/>
-                            <TextView
-                               android:layout_marginLeft="2dp"
-                                android:textColor="@color/colorSolid"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Student at IIT Kanpur"
-                                android:textSize="10dp"/>
-                        </LinearLayout>
-                        </LinearLayout>
-
-
-
-
-
-                    </LinearLayout>
-                    <TextView
-                        android:layout_marginLeft="5dp"
-                        android:paddingTop="2dp"
-
-
-                        android:fontFamily="@font/neuton2"
-                        android:textColor="#424242 "
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/post"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                    <ImageView
-                        android:layout_marginRight="8dp"
-                        android:layout_weight="1"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:src="@drawable/profiles" />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-
-
-
-                        <TextView
-                             android:paddingTop="2dp"
-                            style="@style/commentprofile"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Isha Chatterji"/>
-                            <LinearLayout
-                                android:layout_marginLeft="4dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:layout_height="14dp"
-                                    android:src="@drawable/ic_action_abut"/>
-                                <TextView
-                                    android:layout_marginLeft="2dp"
-                                    android:textColor="@color/colorSolid"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Student at IIT Kanpur"
-                                    android:textSize="11dp"/>
-                            </LinearLayout>
-
-                        </LinearLayout>
-                    </LinearLayout>
-                        <TextView
-
-                            android:justificationMode="inter_word"
-                            android:paddingLeft="6dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            style="@style/comment"
-                            android:text="@string/comment"/>
-
-
-                </LinearLayout>
-                  <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <LinearLayout
-                            android:layout_marginTop="8dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                            <TextView
-                                android:textSize="16dp"
-                                android:textColor="#000"
-                                android:textStyle="bold"
-                                android:gravity="right"
-                                android:layout_marginRight="6dp"
-
-
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="13"/>
-                            <ImageView
-                                android:layout_gravity="left"
-
-                                android:layout_width="16dp"
-                                android:layout_height="16dp"
-                                android:src="@drawable/ic_action_like"
-                                />
-                            <TextView
-                                android:layout_weight="8"
-                                android:gravity="right"
-                                android:layout_marginRight="4dp"
-
-                                style="@style/ststus"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="13"/>
-                            <TextView
-                                android:gravity="right"
-                                android:layout_marginRight="26dp"
-
-                                style="@style/ststus"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Likes"/>
-                            <TextView android:gravity="right"
-                                android:layout_marginRight="4dp"
-                                android:layout_weight="1"
-                                style="@style/ststus"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="23"/>
-                            <TextView
-                                android:layout_weight="1"
-                                style="@style/ststus"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Helped"/>
-
-                        </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@android:color/darker_gray" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        >
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_comment"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_hppy"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                    </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@android:color/darker_gray" />
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_marginRight="8dp"
-                            android:layout_weight="1"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:src="@drawable/profiles" />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="8"
-                            android:orientation="vertical">
-                            <TextView
-                                style="@style/commentprofile"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Prem Kumar"/>
-                            <TextView
-                                style="@style/comment"
-                                android:layout_weight="9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/comment"/>
-                        </LinearLayout>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@android:color/darker_gray" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        >
-
-
-
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_comment"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_hppy"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                    </LinearLayout>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="@android:color/darker_gray" />
-
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="8dp"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_marginRight="8dp"
-                            android:layout_weight="1"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:src="@drawable/profiles" />
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="8"
-                            android:orientation="vertical">
-                            <TextView
-                                style="@style/commentprofile"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:text="Prem Kumar"/>
-                            <TextView
-                                style="@style/comment"
-                                android:layout_weight="9"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/comment"/>
-                        </LinearLayout>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/likebar">
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_comment"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_hppy"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                        <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_weight="1"
-                            android:src="@mipmap/ic_launcher_dislike"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+    <include layout="@layout/post"></include>
 </LinearLayout>
-
 
