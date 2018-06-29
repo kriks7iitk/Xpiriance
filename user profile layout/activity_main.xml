@@ -1,20 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imgView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/buttonLoadPicture"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="0"
-        android:text="Load Picture" />
+        android:text="ACCOUNT"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/boy" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:inputType="none"
+            android:text="Sahil Khan"
+            android:textSize="16sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="@font/arbutus_slab"
+            android:background="@drawable/layout2_bg"
+            android:layout_marginBottom="3dp"/>
+
+        <ImageView
+            android:id="@+id/user_name_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_action_name"
+            android:onClick="LetsEdit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:inputType="none"
+            android:text="********"
+            android:textSize="16sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="@font/arbutus_slab"
+            android:background="@drawable/layout2_bg"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/password"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_action_name"
+            android:onClick="LetsEdit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/male" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:inputType="none"
+            android:text="Male"
+            android:textSize="16sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="@font/arbutus_slab"
+            android:background="@drawable/layout2_bg"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/gender"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_action_name"
+            android:onClick="LetsEdit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/mail" />
+
+        <EditText
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:inputType="none"
+            android:text="mosahilkhan9@gmail.com"
+            android:textSize="16sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="@font/arbutus_slab"
+            android:background="@drawable/layout2_bg"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/email"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_action_name"
+            android:onClick="LetsEdit"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_bg"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="5dp"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/calender" />
+        <EditText
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:includeFontPadding="false"
+            android:inputType="none"
+            android:text="June 9, 1986"
+            android:textSize="16sp"
+            android:textColor="#7f7f7f"
+            android:fontFamily="@font/arbutus_slab"
+            android:background="@drawable/layout2_bg"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/Date_of_Birth"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_action_name"
+            android:onClick="LetsEdit"/>
+
+    </LinearLayout>
+
+
+
+
 </LinearLayout>
